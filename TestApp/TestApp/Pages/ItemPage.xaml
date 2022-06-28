@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TestApp.Pages.ItemPage">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Название"/>
+            <Entry Text="{Binding Name}"/>
+            <Label Text="Описание"/>
+            <Entry Text="{Binding Discription}"/>
+            <Label Text="Дата"/>
+            <Entry Text="{Binding Time}"/>
+            <StackLayout Orientation="Horizontal">
+                <Button Text="Сохранить" Clicked="Button_Clicked"/>
+                <Button Text="Удалить" Clicked="Button_Clicked_1"/>
+                <Button Text="Отмена" Clicked="Button_Clicked_2"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
